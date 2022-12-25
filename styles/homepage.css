@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+}
+.navbar-container {
+  height: 129px;
+}
+.body-grid-container {
+  width: 100%;
+  height: calc(100% - 129px);
+  position: relative;
+  padding: 40px 48px 56px 48px;
+  display: grid;
+  grid-template-columns: 0.3fr 0.4fr 0.3fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "preview bio ."
+    ". bio ."
+    "social work work";
+}
+
+.preview {
+  grid-area: preview;
+}
+.bio {
+  grid-area: bio;
+}
+.social {
+  grid-area: social;
+  position: relative;
+}
+
+#twitter-handle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.work {
+  grid-area: work;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.work-title-headings > h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.work-title-container {
+  display: grid;
+  grid-template-columns: 0.4fr 0.2fr 0.4fr;
+}
+
+.work > hr {
+  margin: 16px 0px;
+}
